@@ -1,0 +1,14 @@
+{
+  "schema": "apv.verification_result.v1",
+  "notes": "This file documents the result schema shape; APV emits deterministic JSON with stable key ordering.",
+  "fields": [
+    "schema",
+    "tool",
+    "verdict",
+    "reason_code",
+    "packet_dir",
+    "packet_id_expected",
+    "packet_id_actual",
+    "checks"
+  ]
+}

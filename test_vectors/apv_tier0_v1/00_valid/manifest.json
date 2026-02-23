@@ -1,0 +1,7 @@
+{
+  "schema": "apv.test_manifest.v1",
+  "notes": "minimal test manifest; bytes are canonical as written (UTF-8 no BOM, LF)",
+  "payload": {
+    "hello_path": "payload/hello.txt"
+  }
+}
