@@ -1,16 +1,18 @@
-# APV .gitignore (Tier-0 hygiene)
-# Keep test_vectors committed; ignore generated proofs/receipts and scratch patchers
+# Node / Next
+node_modules/
+**/node_modules/
+**/.next/
+**/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Generated evidence / receipts (reproducible, but not committed)
-proofs/
-**/proofs/
+# Supabase local runtime
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+supabase/.env.local
 
-# Scratch patchers (not product surface)
-
-# OS/editor noise
-.vscode/
-*.tmp
-*.log
+# OS/editor
+.DS_Store
 Thumbs.db
-Desktop.ini
-
