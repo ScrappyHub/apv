@@ -1,0 +1,16 @@
+# APV .gitignore (Tier-0 hygiene)
+# Keep test_vectors committed; ignore generated proofs/receipts and scratch patchers
+
+# Generated evidence / receipts (reproducible, but not committed)
+proofs/
+**/proofs/
+
+# Scratch patchers (not product surface)
+
+# OS/editor noise
+.vscode/
+*.tmp
+*.log
+Thumbs.db
+Desktop.ini
+
