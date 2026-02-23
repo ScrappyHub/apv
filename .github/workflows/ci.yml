@@ -1,0 +1,17 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows-selftest:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: APV selftest (Windows PowerShell)
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          Set-StrictMode -Version Latest
+          powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File scripts\_selftest_apv_v1.ps1 -RepoRoot "$PWD"
